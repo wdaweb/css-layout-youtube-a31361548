@@ -1,0 +1,339 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#header {
+	height: 60px;
+	width: 100%;
+	/* background: lightblue; */
+	position: fixed;
+}
+
+#header .search {
+	width: 50vh;
+	height: 35px;
+	position: absolute;
+	border: 1px solid rgb(204, 198, 198);
+	border-radius: 20px 0 0 20px;
+	border-right: none;
+	left: calc(50% - 25vh - 20px);
+	top: 25%;
+}
+
+#header .send {
+	width: 50px;
+	height: 35px;
+	left: calc(50% + 25vh - 20px);
+	top: 25%;
+	border: 1px solid rgb(204, 198, 198);
+	border-radius: 0 20px 20px 0;
+	/* border-left: none; */
+	transform-origin: left top;
+	position: absolute;
+	cursor: pointer;
+}
+
+#header :nth-child(1) > i {
+	padding-left: 2vh;
+	line-height: 2;
+	font-size: 30px;
+}
+
+#micro {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: rgb(248, 248, 248);
+	position: absolute;
+	top: 50%;
+	left: 65%;
+	transform: translate(-50%, -50%);
+}
+
+#micro:hover {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: rgb(220, 220, 243);
+	cursor: pointer;
+}
+
+#header :nth-child(5) {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: calc(50% + 25vh);
+	top: 55%;
+}
+
+#header :nth-child(6) > i {
+	padding: 0;
+	line-height: 0;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	font-size: 1rem;
+}
+
+#header :nth-child(7) {
+	position: absolute;
+	top: 35%;
+	left: 90%;
+	font-size: 20px;
+}
+
+#yttitle {
+	width: 110px;
+	height: 70px;
+	position: absolute;
+	left: 6vh;
+	top: 0;
+}
+
+.point3 {
+	left: 80%;
+}
+
+.login1 {
+	width: 90px;
+	height: 35px;
+	border-radius: 20px;
+	font-size: 1rem;
+	text-align: center;
+	color: rgb(62, 62, 236);
+	padding: 0.5rem 0;
+	border: 1px solid rgb(149, 149, 245);
+	position: absolute;
+	left: 92%;
+	top: 20%;
+}
+
+#header :nth-child(7) > i {
+	padding: 0;
+	line-height: 0;
+	color: rgb(62, 62, 236);
+	font-size: 20px;
+}
+
+.login1 p {
+	width: 30px;
+	font-size: 1rem;
+	color: black;
+}
+
+.login1:hover {
+	width: 90px;
+	height: 35px;
+	border-radius: 20px;
+	background: rgb(220, 220, 243);
+	cursor: pointer;
+}
+
+#header2 {
+	height: 45px;
+	width: calc(100% - 13%);
+	/* background: lightgrey; */
+	top: 60px;
+	left: 13%;
+	position: fixed;
+}
+
+#header2 .head2menu li {
+	display: inline-block;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	border-radius: 7.5%;
+	background: rgb(236, 235, 235);
+	margin-left: 20px;
+}
+
+#header2 .head2menu li:hover {
+	transition: 0.5s;
+	background: rgb(224, 223, 223);
+	cursor: pointer;
+}
+
+#sidebar {
+	height: calc(100vh - 60px);
+	/* background: lightcoral; */
+	width: 13%;
+	position: fixed;
+	left: 0;
+	top: 60px;
+	overflow: auto;
+}
+
+#sidebar .sidemenu ul {
+	list-style: none;
+	padding: 10%;
+}
+
+#sidebar .sidemenu li {
+	line-height: 2;
+	font-size: 16px;
+	color: black;
+	/* text-decoration: none; */
+	display: block;
+	padding: 4px 0;
+	transition: 0.1s;
+}
+
+#sidebar .sidemenu li:hover {
+	margin: auto;
+	border-radius: 5%;
+	background: rgb(187, 183, 183, 0.2);
+	cursor: pointer;
+}
+
+#sidebar .sidemenu h1 {
+	font-size: 20px;
+	margin-left: 20%;
+	line-height: 2;
+}
+
+#sidebar .sidemenu h2 {
+	font-size: 16px;
+	padding: 0.5rem 1.5rem;
+	text-align: center;
+}
+
+#sidebar .sidemenu ul li > i {
+	font-size: 1rem;
+	margin: 1rem;
+	color: black;
+}
+
+.years {
+	padding: 0 1rem;
+	font-size: 14px;
+	color: rgb(189, 188, 188);
+}
+
+.login {
+	width: 30%;
+	height: 30px;
+	padding: 4px 0;
+	border-radius: 20px;
+	text-align: center;
+	margin-left: 15%;
+	margin-bottom: 5%;
+	border: 1px solid rgb(149, 149, 245);
+}
+
+.login p {
+	width: 30px;
+	font-size: 1rem;
+	color: black;
+}
+
+.login:hover {
+	width: 30%;
+	height: 30px;
+	padding: 4px 0;
+	border-radius: 20px;
+	margin-left: 15%;
+	margin-bottom: 5%;
+	background: rgb(220, 220, 243);
+	cursor: pointer;
+}
+
+#content {
+	width: calc(100% - 13%);
+	height: calc(100% - 105px);
+	left: 13%;
+	margin-bottom: 1rem;
+	position: absolute;
+	top: 105px;
+	/* background-color: lightblue; */
+	font-size: 0;
+	overflow-x: scroll;
+}
+
+.icon {
+	width: 80px;
+	height: 50px;
+	margin: 0 0 1rem 2rem;
+	background: red;
+	border-radius: 20px;
+}
+
+#content i {
+	margin: 10px 0 0 25px;
+	font-size: 2rem;
+	text-align: center;
+	color: white;
+}
+
+#short-text {
+	font-size: 2rem;
+}
+
+.video {
+	width: 100%;
+	height: 100%;
+}
+
+#content .box {
+	float: left;
+	width: 18%;
+	height: 33%;
+	margin: 1rem 1rem 0.3rem 1rem;
+}
+
+.box:hover {
+	cursor: pointer;
+}
+
+.float-left {
+	width: 90%;
+	height: 60%;
+	margin: 3% 5%;
+	border-radius: 15px;
+	float: left;
+}
+
+.float-left:hover {
+	width: 90%;
+	height: 60%;
+	margin: 3% 5%;
+	border-radius: 0;
+	float: left;
+	cursor: pointer;
+}
+
+.catlogo {
+	width: 15%;
+	height: 15%;
+	margin: 1rem;
+	border-radius: 50%;
+	float: left;
+}
+
+.box p {
+	font-size: 0.8rem;
+}
+
+.shorts {
+	width: 100%;
+	height: 277px;
+	margin-top: 1rem;
+}
+.short-box {
+	width: 12%;
+	margin-left: 2rem;
+	float: left;
+}
+.short-box img {
+	width: 100%;
+	border-radius: 15px;
+}
+
+.short-box > p {
+	font-family: '標楷體';
+	font-size: 1rem;
+}
+
+hr {
+	width: 100%;
+}
